@@ -1,0 +1,2455 @@
+เว็บไซต์ประวัติและผลงาน (Portfolio & Interview Pitch Deck)
+คุณฐิติพงศ์ พุ่มโคกกรวด (คิม)
+
+Assistant Manager / Acting Manager (Innovation & AI)
+Senior Data Engineer & Database Performance Specialist
+
+
+วิธีการนำไปเปิดใช้งานและต่อโดเมน (Quick Start):
+บันทึกโค้ดนี้เป็นไฟล์ชื่อ index.html
+ดับเบิลคลิกเปิดบน Web Browser (Chrome / Safari / Edge) ได้ทันที
+อัปโหลดขึ้น GitHub Pages / Vercel / Netlify เพื่อรับ URL ฟรี และผูก Custom Domain ได้ทันที
+
+
+Full HTML/CSS/JS Source Code:
+<!DOCTYPE html>
+
+<html lang="th" class="scroll-smooth">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Thitipong Pumkokruk (Kim) | Data & AI Innovation Leader Portfolio</title>
+
+  <meta name="description" content="Portfolio & Resume of Thitipong Pumkokruk (Kim) - IT Professional with 13+ years of experience specializing in Data Engineering, Database Performance Tuning, and Enterprise AI Innovation." />
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script>
+
+    tailwind.config = {
+
+      darkMode: 'class',
+
+      theme: {
+
+        extend: {
+
+          fontFamily: {
+
+            sans: ['"Plus Jakarta Sans"', 'Prompt', 'sans-serif'],
+
+            prompt: ['Prompt', 'sans-serif'],
+
+          },
+
+          colors: {
+
+            brand: {
+
+              50: '#ecfeff',
+
+              100: '#cffafe',
+
+              200: '#a5f3fc',
+
+              300: '#67e8f9',
+
+              400: '#22d3ee',
+
+              500: '#06b6d4',
+
+              600: '#0891b2',
+
+              700: '#0e7490',
+
+              800: '#155e75',
+
+              900: '#164e63',
+
+              accent: '#10b981',
+
+              violet: '#8b5cf6',
+
+              dark: '#0b1120',
+
+              card: '#131e36',
+
+              border: '#1e293b'
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  </script>
+
+  <style>
+
+    body {
+
+      background-color: #0b1120;
+
+      color: #f1f5f9;
+
+      font-family: 'Plus Jakarta Sans', 'Prompt', sans-serif;
+
+    }
+
+    
+
+    /* Custom Scrollbar */
+
+    ::-webkit-scrollbar {
+
+      width: 8px;
+
+    }
+
+    ::-webkit-scrollbar-track {
+
+      background: #0b1120;
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+
+      background: #1e293b;
+
+      border-radius: 4px;
+
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+
+      background: #0891b2;
+
+    }
+
+    .glass-card {
+
+      background: rgba(19, 30, 54, 0.75);
+
+      backdrop-filter: blur(12px);
+
+      -webkit-backdrop-filter: blur(12px);
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+
+    }
+
+    
+
+    .glass-card-hover {
+
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .glass-card-hover:hover {
+
+      transform: translateY(-4px);
+
+      border-color: rgba(6, 182, 212, 0.4);
+
+      box-shadow: 0 12px 30px -10px rgba(6, 182, 212, 0.25);
+
+    }
+
+    .glow-cyan {
+
+      box-shadow: 0 0 35px -5px rgba(6, 182, 212, 0.3);
+
+    }
+
+    
+
+    .glow-accent {
+
+      box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.3);
+
+    }
+
+    .gradient-text {
+
+      background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 50%, #a78bfa 100%);
+
+      -webkit-background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+
+    }
+
+    /* Presentation Slide Transitions */
+
+    .slide-container {
+
+      display: none;
+
+      animation: fadeIn 0.4s ease-in-out forwards;
+
+    }
+
+    .slide-container.active-slide {
+
+      display: block;
+
+    }
+
+    @keyframes fadeIn {
+
+      from { opacity: 0; transform: translateY(12px) scale(0.99); }
+
+      to { opacity: 1; transform: translateY(0) scale(1); }
+
+    }
+
+    .timeline-dot::after {
+
+      content: '';
+
+      position: absolute;
+
+      width: 14px;
+
+      height: 14px;
+
+      border-radius: 50%;
+
+      background: #06b6d4;
+
+      top: 6px;
+
+      left: -29px;
+
+      box-shadow: 0 0 12px #06b6d4;
+
+    }
+
+  </style>
+
+</head>
+
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+  <!-- TOP NAVIGATION BAR -->
+
+  <header class="sticky top-0 z-40 w-full glass-card border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+      <!-- Logo / Name -->
+
+      <a href="#home" class="flex items-center gap-3 group">
+
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+
+          K
+
+        </div>
+
+        <div>
+
+          <span class="text-lg font-bold tracking-tight text-white block">Thitipong Pumkokruk</span>
+
+          <span class="text-xs text-cyan-400 font-medium">Kim | Innovation & Data Leader</span>
+
+        </div>
+
+      </a>
+
+      <!-- Desktop Nav -->
+
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+
+        <a href="#about" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-lg hover:bg-slate-800/50 transition">ภาพรวม (Overview)</a>
+
+        <a href="#experience" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-lg hover:bg-slate-800/50 transition">ประสบการณ์ (Experience)</a>
+
+        <a href="#projects" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-lg hover:bg-slate-800/50 transition">ผลงานเด่น (Impact)</a>
+
+        <a href="#skills" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-lg hover:bg-slate-800/50 transition">ทักษะ (Skills)</a>
+
+        <a href="#contact" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-cyan-400 rounded-lg hover:bg-slate-800/50 transition">ติดต่อ (Contact)</a>
+
+      </nav>
+
+      <!-- Action Buttons -->
+
+      <div class="flex items-center gap-3">
+
+        <!-- Presentation Mode Trigger Button -->
+
+        <button onclick="openPresentationModal(0)" class="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-600 hover:from-emerald-400 hover:to-cyan-500 text-white text-sm font-semibold shadow-lg shadow-cyan-500/25 transition-all hover:scale-105 active:scale-95 group">
+
+          <span class="flex h-2 w-2 relative">
+
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+
+          </span>
+
+          <i class="fa-solid fa-chalkboard-user"></i>
+
+          <span>โหมดนำเสนอสัมภาษณ์</span>
+
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+
+        <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 focus:outline-none">
+
+          <i class="fa-solid fa-bars text-xl"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+
+    <div id="mobileMenu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-1 bg-slate-900/95 border-b border-slate-800">
+
+      <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">ภาพรวม (Overview)</a>
+
+      <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">ประสบการณ์ (Experience)</a>
+
+      <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">ผลงานเด่น (Impact)</a>
+
+      <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">ทักษะ (Skills)</a>
+
+      <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">ติดต่อ (Contact)</a>
+
+      <button onclick="openPresentationModal(0)" class="w-full mt-2 flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-cyan-600 text-white font-medium">
+
+        <i class="fa-solid fa-chalkboard-user"></i> เปิดโหมดนำเสนอสัมภาษณ์
+
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO SECTION -->
+
+  <section id="home" class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28">
+
+    <!-- Ambient Glow Backgrounds -->
+
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[650px] h-[350px] bg-cyan-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+
+    <div class="absolute top-1/3 -right-20 w-[400px] h-[300px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        
+
+        <!-- Left: Text & Pitch -->
+
+        <div class="lg:col-span-8 space-y-6">
+
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/40 text-cyan-300 text-xs font-semibold uppercase tracking-wider">
+
+            <i class="fa-solid fa-sparkles text-cyan-400"></i>
+
+            <span>13+ Years IT &bull; 9+ Years Data Engineering &bull; AI Innovation</span>
+
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+
+            ขับเคลื่อนองค์กรด้วย <br class="hidden sm:inline" />
+
+            <span class="gradient-text">Data Architecture &amp; AI Innovation</span>
+
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl font-prompt">
+
+            สวัสดีครับ ผม <strong class="text-white">ฐิติพงศ์ พุ่มโคกกรวด (คิม)</strong> ปัจจุบันดำรงตำแหน่ง <span class="text-cyan-300 font-medium">Assistant Manager (Acting Manager - Innovation & AI)</span> เชี่ยวชาญพิเศษด้านการออกแบบ Data Warehouse, ย้ายระบบขึ้น Cloud AWS, ปรับแต่งประสิทธิภาพ SQL ขั้นสูง (Tuning 10 ชม. เหลือไม่กี่นาที) และการสร้าง Enterprise AI Solutions
+
+          </p>
+
+          <!-- Contact Quick Badges -->
+
+          <div class="flex flex-wrap gap-4 pt-2 text-sm text-slate-300">
+
+            <a href="mailto:thitipong.pumkokruk@gmail.com" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 hover:border-cyan-500/50 hover:text-cyan-300 transition">
+
+              <i class="fa-solid fa-envelope text-cyan-400"></i> thitipong.pumkokruk@gmail.com
+
+            </a>
+
+            <a href="tel:0842951559" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 hover:border-cyan-500/50 hover:text-cyan-300 transition">
+
+              <i class="fa-solid fa-phone text-emerald-400"></i> 084-295-1559
+
+            </a>
+
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-400">
+
+              <i class="fa-solid fa-location-dot text-rose-400"></i> Bangkok, Thailand
+
+            </span>
+
+          </div>
+
+          <!-- CTA Buttons -->
+
+          <div class="flex flex-wrap gap-4 pt-4">
+
+            <button onclick="openPresentationModal(0)" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 text-white font-bold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition">
+
+              <i class="fa-solid fa-play-circle text-lg"></i>
+
+              <span>เริ่มโหมดนำเสนอสัมภาษณ์ (Interview Deck)</span>
+
+            </button>
+
+            <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold transition">
+
+              <i class="fa-solid fa-layer-group text-cyan-400"></i>
+
+              <span>ดูผลงานเด่น (Case Studies)</span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Profile Card & Quick Stats -->
+
+        <div class="lg:col-span-4">
+
+          <div class="glass-card rounded-2xl p-6 border border-slate-700/70 relative glow-cyan">
+
+            <div class="flex flex-col items-center text-center space-y-4">
+
+              <!-- Avatar -->
+
+              <div class="relative w-32 h-32 rounded-2xl overflow-hidden border-2 border-cyan-400/50 p-1 bg-gradient-to-tr from-cyan-500 to-emerald-400 shadow-xl">
+
+                <div class="w-full h-full rounded-xl bg-slate-900 flex items-center justify-center overflow-hidden">
+
+                  <i class="fa-solid fa-user-tie text-6xl text-cyan-300"></i>
+
+                </div>
+
+                <div class="absolute bottom-2 right-2 w-4 h-4 bg-emerald-500 border-2 border-slate-900 rounded-full" title="พร้อมร่วมงาน"></div>
+
+              </div>
+
+              <div>
+
+                <h3 class="text-xl font-bold text-white">นายฐิติพงศ์ พุ่มโคกกรวด</h3>
+
+                <p class="text-sm text-cyan-400 font-medium">Mr. Thitipong Pumkokruk (Kim)</p>
+
+                <p class="text-xs text-slate-400 mt-1">Assistant Manager &bull; Senior Data Architect</p>
+
+              </div>
+
+              <div class="w-full border-t border-slate-800 pt-4 text-left space-y-2 text-xs text-slate-300">
+
+                <div class="flex justify-between">
+
+                  <span class="text-slate-400">ประสบการณ์รวม:</span>
+
+                  <span class="font-semibold text-white">13+ ปีในสายงาน IT</span>
+
+                </div>
+
+                <div class="flex justify-between">
+
+                  <span class="text-slate-400">ความเชี่ยวชาญเฉพาะทาง:</span>
+
+                  <span class="font-semibold text-cyan-300">Data Engineering (9 ปี)</span>
+
+                </div>
+
+                <div class="flex justify-between">
+
+                  <span class="text-slate-400">ตำแหน่งปัจจุบัน:</span>
+
+                  <span class="font-semibold text-emerald-400">Acting Manager (AI & Innovation)</span>
+
+                </div>
+
+                <div class="flex justify-between">
+
+                  <span class="text-slate-400">เป้าหมายงาน:</span>
+
+                  <span class="font-semibold text-slate-200">Data / AI Leadership</span>
+
+                </div>
+
+              </div>
+
+              <button onclick="window.print()" class="w-full py-2.5 px-4 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-slate-300 hover:text-white flex items-center justify-center gap-2 transition">
+
+                <i class="fa-solid fa-print"></i> พิมพ์ / บันทึกประวัติ (Save as PDF)
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- KEY IMPACT METRICS BAR -->
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+        <div class="glass-card glass-card-hover rounded-xl p-5 border border-slate-800/80 relative overflow-hidden">
+
+          <div class="text-3xl font-extrabold text-cyan-400 mb-1">10h ➔ <span class="text-emerald-400">&lt;5m</span></div>
+
+          <div class="text-xs font-bold text-slate-200">SQL Performance Tuning</div>
+
+          <div class="text-xs text-slate-400 mt-1">ลดระยะเวลาประมวลผลระบบลงกว่า 80-98%</div>
+
+        </div>
+
+        <div class="glass-card glass-card-hover rounded-xl p-5 border border-slate-800/80 relative overflow-hidden">
+
+          <div class="text-3xl font-extrabold text-amber-400 mb-1">PSEA 2021</div>
+
+          <div class="text-xs font-bold text-slate-200">รางวัลเลิศรัฐ สาขาบริการภาครัฐ</div>
+
+          <div class="text-xs text-slate-400 mt-1">ระบบลงทะเบียนเข้าประเทศช่วง COVID-19</div>
+
+        </div>
+
+        <div class="glass-card glass-card-hover rounded-xl p-5 border border-slate-800/80 relative overflow-hidden">
+
+          <div class="text-3xl font-extrabold text-emerald-400 mb-1">95%</div>
+
+          <div class="text-xs font-bold text-slate-200">Deep Learning Precision</div>
+
+          <div class="text-xs text-slate-400 mt-1">โมเดลทำนายระยะโรคไตในผู้ป่วยเบาหวาน</div>
+
+        </div>
+
+        <div class="glass-card glass-card-hover rounded-xl p-5 border border-slate-800/80 relative overflow-hidden">
+
+          <div class="text-3xl font-extrabold text-violet-400 mb-1">20+ Reports</div>
+
+          <div class="text-xs font-bold text-slate-200">Enterprise Power BI &amp; DWH</div>
+
+          <div class="text-xs text-slate-400 mt-1">ผสานระบบ SEED, Salesforce, SAP, AWS</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECTION: ABOUT & STRENGTHS -->
+
+  <section id="about" class="py-16 bg-slate-950/60 border-t border-slate-800/80">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-12">
+
+        <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">Professional Summary</h2>
+
+        <p class="text-3xl font-bold text-white">สรุปภาพรวมและแนวทางการทำงาน</p>
+
+        <p class="text-slate-400 text-sm mt-3">
+
+          ผู้เชี่ยวชาญด้าน IT ที่ผสานองค์ความรู้ด้าน Data Engineering, Database Administration และ Generative AI เข้ากับทักษะการบริหารจัดการทีมเชิงกลยุทธ์ (People & Project Management)
+
+        </p>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800/80">
+
+          <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4">
+
+            <i class="fa-solid fa-server"></i>
+
+          </div>
+
+          <h3 class="text-lg font-bold text-white mb-2">Data & Database Mastery</h3>
+
+          <p class="text-slate-300 text-sm leading-relaxed">
+
+            เชี่ยวชาญการออกแบบสถาปัตยกรรม Medallion Data Warehouse (Bronze, Silver, Gold), การทำ Data Modeling, ETL Pipeline ย้ายข้อมูลขึ้น Cloud AWS และการทำ Performance Tuning ขั้นสูงบน MS SQL Server Always-On, Oracle และ MySQL
+
+          </p>
+
+        </div>
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800/80">
+
+          <div class="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+
+            <i class="fa-solid fa-brain"></i>
+
+          </div>
+
+          <h3 class="text-lg font-bold text-white mb-2">AI & Innovation Leadership</h3>
+
+          <p class="text-slate-300 text-sm leading-relaxed">
+
+            วางยุทธศาสตร์ RAG Infrastructure สำหรับ Knowledge Management ในองค์กร, วางกรอบธรรมาภิบาล AI Agents (AI Governance), สร้างเครื่องมือสรุปการประชุมอัตโนมัติ และประยุกต์ใช้ LLM API ในกระบวนการทำงานเพื่อลดต้นทุน
+
+          </p>
+
+        </div>
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800/80">
+
+          <div class="w-12 h-12 rounded-lg bg-violet-500/10 text-violet-400 flex items-center justify-center text-xl mb-4">
+
+            <i class="fa-solid fa-users-gear"></i>
+
+          </div>
+
+          <h3 class="text-lg font-bold text-white mb-2">Strategic Execution & Agile</h3>
+
+          <p class="text-slate-300 text-sm leading-relaxed">
+
+            มีประสบการณ์บริหารทีมงานและ Vendor ภายนอก, ขับเคลื่อนวัฒนธรรม Data Literacy ในองค์กร, การบริหารความเสี่ยง (Risk-Based Approach) และการแก้ปัญหาอย่างเป็นระบบด้วย 5W1H, Why Analysis และ Fishbone Diagram
+
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Strengths & Soft Skills Grid -->
+
+      <div class="mt-8 glass-card rounded-xl p-6 border border-slate-800/80">
+
+        <h4 class="text-sm font-bold uppercase tracking-wider text-cyan-300 mb-4 flex items-center gap-2">
+
+          <i class="fa-solid fa-shield-halved"></i> จุดเด่นและทักษะการทำงาน (Strengths & Soft Skills)
+
+        </h4>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center text-xs">
+
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200">
+
+            <i class="fa-solid fa-bolt text-amber-400 text-lg mb-1 block"></i>
+
+            <strong>Quick Learner</strong><br><span class="text-slate-400">เรียนรู้เร็ว ประยุกต์ไว</span>
+
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200">
+
+            <i class="fa-solid fa-diagram-project text-cyan-400 text-lg mb-1 block"></i>
+
+            <strong>Systematic & Structured</strong><br><span class="text-slate-400">ทำงานเป็นระบบ มีโครงสร้าง</span>
+
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200">
+
+            <i class="fa-solid fa-people-arrows text-emerald-400 text-lg mb-1 block"></i>
+
+            <strong>Cross-Functional</strong><br><span class="text-slate-400">สื่อสารเชื่อมโยงทุกแผนก</span>
+
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200">
+
+            <i class="fa-solid fa-handshake text-blue-400 text-lg mb-1 block"></i>
+
+            <strong>Negotiation & Vendor</strong><br><span class="text-slate-400">การเจรจาและคุม Vendor</span>
+
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200">
+
+            <i class="fa-solid fa-user-graduate text-violet-400 text-lg mb-1 block"></i>
+
+            <strong>Coaching Team</strong><br><span class="text-slate-400">โค้ชชิ่งและพัฒนาลูกทีม</span>
+
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-200">
+
+            <i class="fa-solid fa-magnifying-glass-chart text-rose-400 text-lg mb-1 block"></i>
+
+            <strong>Problem Analysis</strong><br><span class="text-slate-400">5W1H / Fishbone Analysis</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECTION: WORK EXPERIENCE TIMELINE -->
+
+  <section id="experience" class="py-16">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+
+        <div>
+
+          <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">Career Journey</h2>
+
+          <p class="text-3xl font-bold text-white">เส้นทางและประสบการณ์การทำงาน (13+ ปี)</p>
+
+        </div>
+
+        <p class="text-slate-400 text-sm mt-2 md:mt-0">ลำดับประวัติการทำงานและผลงานในแต่ละองค์กร</p>
+
+      </div>
+
+      <div class="relative pl-6 md:pl-8 border-l-2 border-slate-800 space-y-10">
+
+        <!-- 1. SMAS Acting Manager (Innovation & AI) -->
+
+        <div class="relative timeline-dot">
+
+          <div class="glass-card rounded-xl p-6 border border-cyan-500/30 glow-cyan">
+
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+
+              <div>
+
+                <span class="inline-block px-2.5 py-0.5 rounded text-xs font-semibold bg-cyan-950 text-cyan-300 border border-cyan-700/50 mb-1">
+
+                  ปัจจุบัน (Current Role)
+
+                </span>
+
+                <h3 class="text-xl font-bold text-white">Assistant Manager - Acting Manager (Innovation &amp; AI)</h3>
+
+                <p class="text-sm font-semibold text-cyan-400">Sumitomo Mitsui Auto Leasing &amp; Service (Thailand) Co., Ltd.</p>
+
+              </div>
+
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700">
+
+                <i class="fa-regular fa-calendar-days mr-1 text-cyan-400"></i> ม.ค. 2026 – ปัจจุบัน
+
+              </span>
+
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+
+              นำทัพทีมเทคนิคและการบริหารจัดการนวัตกรรม AI บริหารจัดการ External Vendors และดูแลวงจรโครงการตั้งแต่การวางแผนจนถึงการส่งมอบ เพื่อเพิ่มประสิทธิภาพกระบวนการทำงานและส่งมอบคุณค่าเชิงธุรกิจ
+
+            </p>
+
+            <div class="space-y-2 text-xs text-slate-300 bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+
+              <strong class="text-cyan-300 block text-xs uppercase tracking-wider mb-1">Key Projects &amp; Strategy:</strong>
+
+              <div class="flex items-start gap-2">
+
+                <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+
+                <span><strong>Service Mobile App Project:</strong> วางแผนและนำโครงการพัฒนาแอปพลิเคชันสำหรับทีม Service เพื่อเพิ่มความรวดเร็วในการอนุมัติงานซ่อมโดยใช้เทคโนโลยี AI</span>
+
+              </div>
+
+              <div class="flex items-start gap-2">
+
+                <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+
+                <span><strong>AI Meeting Summary Tool:</strong> ควบคุมและโค้ชทีมในการสร้างระบบสรุปเนื้อหาการประชุมอัตโนมัติด้วย AI</span>
+
+              </div>
+
+              <div class="flex items-start gap-2">
+
+                <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+
+                <span><strong>Cloud ETL Migration:</strong> บริหารจัดการการย้ายกระบวนการ ETL จาก On-Premise Server ขึ้น AWS Cloud ได้อย่างราบรื่น</span>
+
+              </div>
+
+              <div class="flex items-start gap-2">
+
+                <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+
+                <span><strong>5-Year Strategic IT Vision:</strong> กำหนดยุทธศาสตร์ 5 ปีในการสร้าง RAG Infrastructure, Medallion DWH (Bronze/Silver/Gold), Knowledge Management System และ AI Agents Governance ในรูปแบบ Pay-as-you-go ที่ปลอดภัย</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 2. SMAS Senior DBA / Data Engineer -->
+
+        <div class="relative timeline-dot">
+
+          <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+
+              <div>
+
+                <h3 class="text-xl font-bold text-white">Senior Database Administrator (Data Engineer)</h3>
+
+                <p class="text-sm font-semibold text-slate-300">Sumitomo Mitsui Auto Leasing &amp; Service (Thailand) Co., Ltd.</p>
+
+              </div>
+
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700">
+
+                <i class="fa-regular fa-calendar-days mr-1 text-cyan-400"></i> พ.ย. 2022 – ธ.ค. 2025 (3 ปี 2 เดือน)
+
+              </span>
+
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+
+              วางกรอบ 3-Year Roadmap (ปี 1: DB Management, ปี 2: Data Warehouse Dev, ปี 3: Data-driven decision making)
+
+            </p>
+
+            <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-300 bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+
+              <li><strong>Database Optimization:</strong> ออกแบบ Schema, Access Control, Indexing, Fragmentation และ Performance Tuning <strong>ลดระยะเวลาดึงข้อมูลลงได้สูงสุดถึง 80%</strong></li>
+
+              <li><strong>Data Warehouse Integration:</strong> เชื่อมต่อข้อมูลจากระบบหลักทั้งหมด (SEED, Salesforce, SAP) สร้างเป็น Single Source of Truth</li>
+
+              <li><strong>Data Literacy &amp; BI:</strong> จัดอบรมพื้นฐาน Data Literacy ทั่วทั้งองค์กร และพัฒนา <strong>Power BI Reports กว่า 20 ฉบับ</strong> แทนที่การทำงานแบบเดิมบน Excel</li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!-- 3. Consular Affairs -->
+
+        <div class="relative timeline-dot">
+
+          <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+
+              <div>
+
+                <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-xs font-semibold bg-amber-950 text-amber-300 border border-amber-800/50 mb-1">
+
+                  <i class="fa-solid fa-award"></i> Public Sector Excellence Award (PSEA) 2021
+
+                </div>
+
+                <h3 class="text-xl font-bold text-white">Computer Technical Officer (นักวิชาการคอมพิวเตอร์)</h3>
+
+                <p class="text-sm font-semibold text-slate-300">Department of Consular Affairs (กรมการกงสุล กระทรวงการต่างประเทศ)</p>
+
+              </div>
+
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700">
+
+                <i class="fa-regular fa-calendar-days mr-1 text-cyan-400"></i> ต.ค. 2019 – พ.ย. 2022 (3 ปี 1 เดือน)
+
+              </span>
+
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+
+              ดูแลวงจรการพัฒนาระบบซอฟต์แวร์เต็มรูปแบบ (Full SDLC), System Analysis, การจัดทำระบบรายงาน และเอกสารราชการ
+
+            </p>
+
+            <div class="space-y-2 text-xs text-slate-300 bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+
+              <div class="flex items-start gap-2">
+
+                <i class="fa-solid fa-trophy text-amber-400 mt-0.5"></i>
+
+                <span><strong>COE Thailand System (coethailand.mfa.go.th):</strong> พัฒนาและนำระบบลงทะเบียนออนไลน์สำหรับผู้เดินทางเข้าประเทศไทยทางอากาศช่วง COVID-19 ตามนโยบายระดับชาติ รองรับผู้ใช้งานทั่วโลกจนได้รับรางวัลบริการภาครัฐดีเด่น (PSEA) ประจำปี 2564</span>
+
+              </div>
+
+              <div class="flex items-start gap-2">
+
+                <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+
+                <span><strong>Overseas Election Tracking System:</strong> ออกแบบและพัฒนาระบบติดตามและกำกับการดำเนินงานของสถานเอกอัครราชทูตและสถานกงสุลใหญ่เพื่อสนับสนุนการจัดการเลือกตั้งนอกราชอาณาจักร</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 4. Honda Leasing -->
+
+        <div class="relative timeline-dot">
+
+          <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+
+              <div>
+
+                <h3 class="text-xl font-bold text-white">Data Engineer &amp; Database Administrator</h3>
+
+                <p class="text-sm font-semibold text-slate-300">Honda Leasing (Thailand) Co., Ltd.</p>
+
+              </div>
+
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700">
+
+                <i class="fa-regular fa-calendar-days mr-1 text-cyan-400"></i> ส.ค. 2015 – ต.ค. 2019 (4 ปี 2 เดือน)
+
+              </span>
+
+            </div>
+
+            <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-300 bg-slate-900/60 p-4 rounded-lg border border-slate-800">
+
+              <li><strong>Enterprise DB &amp; Performance Tuning:</strong> ดูแลระบบฐานข้อมูลระดับองค์กร MS SQL Server (Always-On High Availability), AS400 และ DB2 — <strong>สร้างผลงานจูน SQL Query ลดเวลาทำงานจาก 13 ชั่วโมง เหลือเพียง 10 นาที</strong></li>
+
+              <li><strong>Data Warehouse Creation:</strong> ทำหน้าที่ DBA 2 ปีแรก และศึกษาการทำ Data Warehouse จนสามารถ<strong>สร้าง Data Warehouse แรกของ Honda Leasing</strong> ได้สำเร็จในปีที่ 3</li>
+
+              <li><strong>IFRS9 Reporting:</strong> ซัพพอร์ตทีมบัญชีในการสร้างรายงาน Power BI เพื่อรองรับมาตรฐานสากล IFRS9</li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!-- 5. Lixil & Eagles Air & Sea -->
+
+        <div class="relative timeline-dot">
+
+          <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+
+              <div>
+
+                <h3 class="text-lg font-bold text-white">Programmer .NET (Windows &amp; Web Applications)</h3>
+
+                <p class="text-sm text-slate-300">Lixil (Thailand) PCL. &amp; Eagles Air &amp; Sea (Thailand) Co., Ltd.</p>
+
+              </div>
+
+              <span class="px-3 py-1 rounded-full bg-slate-800 text-xs font-medium text-slate-300 border border-slate-700">
+
+                <i class="fa-regular fa-calendar-days mr-1 text-cyan-400"></i> มิ.ย. 2012 – ส.ค. 2015 (3+ ปี)
+
+              </span>
+
+            </div>
+
+            <p class="text-xs text-slate-300">
+
+              เก็บความต้องการและพัฒนาโปรแกรมตามมาตรฐานญี่ปุ่น พัฒนา Handheld Applications สำหรับงานตรวจนับคลังสินค้า (Inventory Checking) และพัฒนาระบบ Logistics สนับสนุนการดำเนินงานของบริษัทด้วย C#.NET, VB.NET และ MS SQL Server
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECTION: FLAGSHIP PROJECTS / IMPACT SHOWCASE -->
+
+  <section id="projects" class="py-16 bg-slate-950/60 border-t border-slate-800/80">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-12">
+
+        <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">Highlighted Projects</h2>
+
+        <p class="text-3xl font-bold text-white">ผลงานและโครงการสร้างผลกระทบระดับประเทศและองค์กร</p>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Project 1: SQL Performance Tuning -->
+
+        <div class="glass-card glass-card-hover rounded-xl p-6 border border-slate-800 flex flex-col justify-between">
+
+          <div>
+
+            <div class="flex items-center justify-between mb-4">
+
+              <span class="text-2xl text-cyan-400"><i class="fa-solid fa-gauge-high"></i></span>
+
+              <span class="text-xs font-bold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-800/60">Optimization</span>
+
+            </div>
+
+            <h3 class="text-lg font-bold text-white mb-2">SQL Performance Tuning Breakthrough</h3>
+
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+
+              แก้ปัญหาคอขวดของคิวรีขนาดใหญ่และ Batch Jobs ที่ทำงานช้า ด้วยการวิเคราะห์ Execution Plan, ปรับโครงสร้าง Indexing, Partitioning และขจัด Table Scans ลดเวลาประมวลผลจาก <strong>10-13 ชั่วโมง เหลือเพียงไม่กี่นาที (ลดลง &gt;90%)</strong>
+
+            </p>
+
+          </div>
+
+          <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">MS SQL Server</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Execution Plan</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Indexing</span>
+
+          </div>
+
+        </div>
+
+        <!-- Project 2: COE Thailand -->
+
+        <div class="glass-card glass-card-hover rounded-xl p-6 border border-slate-800 flex flex-col justify-between">
+
+          <div>
+
+            <div class="flex items-center justify-between mb-4">
+
+              <span class="text-2xl text-amber-400"><i class="fa-solid fa-plane-arrival"></i></span>
+
+              <span class="text-xs font-bold px-2.5 py-1 rounded bg-amber-950 text-amber-300 border border-amber-800/60">National System</span>
+
+            </div>
+
+            <h3 class="text-lg font-bold text-white mb-2">COVID-19 Inbound Registration (COE Thailand)</h3>
+
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+
+              ระบบลงทะเบียนออนไลน์ระดับชาติ (<a href="https://coethailand.mfa.go.th" target="_blank" class="text-cyan-400 underline">coethailand.mfa.go.th</a>) รองรับผู้เดินทางเข้าไทยทั่วโลกช่วงวิกฤต มีความเสถียรและความปลอดภัยสูง <strong>คว้ารางวัลเลิศรัฐ (PSEA) ปี 2564</strong>
+
+            </p>
+
+          </div>
+
+          <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">High Availability</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">GovTech</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">PSEA 2021</span>
+
+          </div>
+
+        </div>
+
+        <!-- Project 3: Deep Learning Healthcare -->
+
+        <div class="glass-card glass-card-hover rounded-xl p-6 border border-slate-800 flex flex-col justify-between">
+
+          <div>
+
+            <div class="flex items-center justify-between mb-4">
+
+              <span class="text-2xl text-emerald-400"><i class="fa-solid fa-heart-pulse"></i></span>
+
+              <span class="text-xs font-bold px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-800/60">Machine Learning</span>
+
+            </div>
+
+            <h3 class="text-lg font-bold text-white mb-2">Kidney Disease Stage Prediction</h3>
+
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+
+              พัฒนาแบบจำลองโครงข่ายประสาทเทียมเชิงลึก (Deep Learning) สำหรับทำนายและจำแนกระยะของโรคไตในกลุ่มผู้ป่วยโรคเบาหวาน โดยทำค่าความแม่นยำได้สูงถึง <strong>95% Precision</strong>
+
+            </p>
+
+          </div>
+
+          <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Python</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Deep Learning</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">95% Precision</span>
+
+          </div>
+
+        </div>
+
+        <!-- Project 4: Medallion DWH & AWS Migration -->
+
+        <div class="glass-card glass-card-hover rounded-xl p-6 border border-slate-800 flex flex-col justify-between">
+
+          <div>
+
+            <div class="flex items-center justify-between mb-4">
+
+              <span class="text-2xl text-cyan-400"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+
+              <span class="text-xs font-bold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-800/60">Data Architecture</span>
+
+            </div>
+
+            <h3 class="text-lg font-bold text-white mb-2">Enterprise Medallion DWH &amp; Cloud Migration</h3>
+
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+
+              ออกแบบสถาปัตยกรรมข้อมูล Medallion (Bronze ➔ Silver ➔ Gold) เชื่อมผสาน SEED, Salesforce, SAP พร้อมบริหารการย้ายระบบ ETL จาก On-Prem ขึ้น AWS Cloud อย่างสมบูรณ์แบบ
+
+            </p>
+
+          </div>
+
+          <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">AWS Cloud</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Medallion DWH</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Power BI</span>
+
+          </div>
+
+        </div>
+
+        <!-- Project 5: AI Repair Approval Mobile App -->
+
+        <div class="glass-card glass-card-hover rounded-xl p-6 border border-slate-800 flex flex-col justify-between">
+
+          <div>
+
+            <div class="flex items-center justify-between mb-4">
+
+              <span class="text-2xl text-violet-400"><i class="fa-solid fa-mobile-screen-button"></i></span>
+
+              <span class="text-xs font-bold px-2.5 py-1 rounded bg-violet-950 text-violet-300 border border-violet-800/60">AI Mobile App</span>
+
+            </div>
+
+            <h3 class="text-lg font-bold text-white mb-2">AI-Driven Repair Approval Platform</h3>
+
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+
+              วางแผนและควบคุมการพัฒนา Mobile App สำหรับทีมบริการ (Service Team) เพื่อย่นระยะเวลาการตรวจเช็คและอนุมัติใบสั่งซ่อมรถยนต์ด้วยเทคโนโลยี AI OCR และ Automation
+
+            </p>
+
+          </div>
+
+          <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">AI OCR</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Mobile Platform</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">Workflow Auto</span>
+
+          </div>
+
+        </div>
+
+        <!-- Project 6: AI Meeting Summary & Agent Governance -->
+
+        <div class="glass-card glass-card-hover rounded-xl p-6 border border-slate-800 flex flex-col justify-between">
+
+          <div>
+
+            <div class="flex items-center justify-between mb-4">
+
+              <span class="text-2xl text-blue-400"><i class="fa-solid fa-robot"></i></span>
+
+              <span class="text-xs font-bold px-2.5 py-1 rounded bg-blue-950 text-blue-300 border border-blue-800/60">Gen AI &amp; Governance</span>
+
+            </div>
+
+            <h3 class="text-lg font-bold text-white mb-2">Enterprise RAG &amp; AI Agents System</h3>
+
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+
+              พัฒนาเครื่องมือ AI สรุปการประชุมอัตโนมัติ และวางกรอบนโยบาย AI Governance ควบคุมความปลอดภัยข้อมูลและควบคุมค่าใช้จ่ายในโมเดล Pay-as-you-go รองรับ RAG Knowledge Management
+
+            </p>
+
+          </div>
+
+          <div class="pt-3 border-t border-slate-800/80 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">RAG</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">LLM APIs</span>
+
+            <span class="bg-slate-900 px-2 py-0.5 rounded border border-slate-800">AI Governance</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECTION: TECHNICAL SKILLS -->
+
+  <section id="skills" class="py-16">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-12">
+
+        <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-bold mb-2">Technical Capabilities</h2>
+
+        <p class="text-3xl font-bold text-white">ความสามารถและทักษะเชิงเทคนิค (Skill Matrix)</p>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Skill Card 1: Data Engineering -->
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+
+              <i class="fa-solid fa-cubes-stacked"></i>
+
+            </div>
+
+            <h3 class="text-base font-bold text-white">Data Engineering &amp; ETL</h3>
+
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Medallion Architecture (Bronze/Silver/Gold)</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Data Modeling (Star / Snowflake Schemas)</li>
+
+            <li class="fa-solid-check flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> ETL / SSIS, SSAS, SSRS Pipelines</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> AWS Cloud ETL Migration &amp; Automation</li>
+
+          </ul>
+
+        </div>
+
+        <!-- Skill Card 2: Database Management -->
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+
+              <i class="fa-solid fa-database"></i>
+
+            </div>
+
+            <h3 class="text-base font-bold text-white">Database &amp; Performance</h3>
+
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> MS SQL Server (Expert Level)</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Advanced Query &amp; Index Performance Tuning</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Always-On High Availability &amp; DR</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400"></i> Oracle, MySQL, AS400, DB2</li>
+
+          </ul>
+
+        </div>
+
+        <!-- Skill Card 3: AI & Machine Learning -->
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <div class="w-10 h-10 rounded-lg bg-violet-500/10 text-violet-400 flex items-center justify-center text-lg">
+
+              <i class="fa-solid fa-brain"></i>
+
+            </div>
+
+            <h3 class="text-base font-bold text-white">AI &amp; Machine Learning</h3>
+
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-violet-400"></i> AI Agents &amp; Multi-Agent Workflow</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-violet-400"></i> Retrieval-Augmented Generation (RAG)</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-violet-400"></i> OpenAI / Gemini / LLM API Integration</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-violet-400"></i> Deep Learning Predictive Modeling (95% Acc.)</li>
+
+          </ul>
+
+        </div>
+
+        <!-- Skill Card 4: Software Development -->
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg">
+
+              <i class="fa-solid fa-code"></i>
+
+            </div>
+
+            <h3 class="text-base font-bold text-white">Software &amp; Web Dev</h3>
+
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Python (Data Engineering &amp; Automation)</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> C#.NET (MVC, Core) &amp; VB.NET</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> Node.js, JavaScript, PHP</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-blue-400"></i> N8N Workflow Automation &amp; REST APIs</li>
+
+          </ul>
+
+        </div>
+
+        <!-- Skill Card 5: Business Intelligence -->
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg">
+
+              <i class="fa-solid fa-chart-pie"></i>
+
+            </div>
+
+            <h3 class="text-base font-bold text-white">Business Intelligence &amp; Analytics</h3>
+
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> Power BI (DAX, Data Modeling, 20+ Dashboards)</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> Tableau &amp; Executive Reporting</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> IFRS9 Compliance Reporting Support</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-amber-400"></i> Enterprise Data Literacy Promotion</li>
+
+          </ul>
+
+        </div>
+
+        <!-- Skill Card 6: Architecture & SA -->
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <div class="w-10 h-10 rounded-lg bg-rose-500/10 text-rose-400 flex items-center justify-center text-lg">
+
+              <i class="fa-solid fa-sitemap"></i>
+
+            </div>
+
+            <h3 class="text-base font-bold text-white">System Design &amp; Governance</h3>
+
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rose-400"></i> UML &amp; ER Diagram Database Design</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rose-400"></i> UI/UX Design (Figma) &amp; Postman Testing</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rose-400"></i> AI Governance &amp; Security Compliance</li>
+
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-rose-400"></i> AWS Cloud Infrastructure (Fundamentals)</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECTION: EDUCATION & PERSONAL INFO -->
+
+  <section class="py-16 bg-slate-950/60 border-t border-slate-800/80">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        
+
+        <!-- Education Card -->
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+
+              <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
+
+            <div>
+
+              <h3 class="text-lg font-bold text-white">ประวัติการศึกษา (Education)</h3>
+
+              <p class="text-xs text-slate-400">Bachelor's Degree in Computer Science</p>
+
+            </div>
+
+          </div>
+
+          <div class="space-y-2 text-sm text-slate-300">
+
+            <div class="font-semibold text-white">มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ (RMUTK)</div>
+
+            <div class="text-xs text-cyan-300">Bachelor's Programs in Computer Science (2008 – 2012)</div>
+
+            <p class="text-xs text-slate-400 mt-2">
+
+              <strong>Senior Project:</strong> Car Park Management System (ระบบบริหารจัดการลานจอดรถอัจฉริยะ)
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Languages & Interests -->
+
+        <div class="glass-card rounded-xl p-6 border border-slate-800">
+
+          <div class="flex items-center gap-3 mb-4">
+
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+
+              <i class="fa-solid fa-earth-americas"></i>
+
+            </div>
+
+            <div>
+
+              <h3 class="text-lg font-bold text-white">ภาษาและกิจกรรมยามว่าง (Languages &amp; Hobbies)</h3>
+
+              <p class="text-xs text-slate-400">Personal Background</p>
+
+            </div>
+
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-300">
+
+            <div>
+
+              <strong class="text-white block mb-1">ทักษะทางภาษา:</strong>
+
+              <div class="space-y-1">
+
+                <div>&bull; <strong class="text-slate-200">Thai:</strong> Native (ภาษาแม่)</div>
+
+                <div>&bull; <strong class="text-slate-200">English:</strong> Intermediate (สื่อสาร, อ่าน, เขียน, ประชุมงาน)</div>
+
+              </div>
+
+            </div>
+
+            <div>
+
+              <strong class="text-white block mb-1">กิจกรรมที่สนใจ:</strong>
+
+              <div class="flex flex-wrap gap-1.5">
+
+                <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">🏃 Jogging</span>
+
+                <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">🤿 Scuba Diving</span>
+
+                <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">🏂 Ski &amp; Snowboard</span>
+
+                <span class="px-2 py-1 rounded bg-slate-900 border border-slate-800 text-slate-300">🎧 Music</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECTION: CONTACT & FOOTER -->
+
+  <section id="contact" class="py-16 border-t border-slate-800">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+      <div class="max-w-2xl mx-auto space-y-6">
+
+        <h2 class="text-3xl font-bold text-white">พร้อมร่วมงานและขับเคลื่อนความสำเร็จ</h2>
+
+        <p class="text-slate-300 text-sm">
+
+          หากท่านกำลังมองหาผู้นำและผู้เชี่ยวชาญด้าน Data Architecture, Database Management หรือ AI Innovation ที่พร้อมสร้าง Impact ให้แก่องค์กร สามารถติดต่อได้ทันทีครับ
+
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+
+          <a href="mailto:thitipong.pumkokruk@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold shadow-lg shadow-cyan-500/20 transition">
+
+            <i class="fa-solid fa-envelope"></i> thitipong.pumkokruk@gmail.com
+
+          </a>
+
+          <a href="tel:0842951559" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold transition">
+
+            <i class="fa-solid fa-phone text-emerald-400"></i> 084-295-1559
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-slate-800/80 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+        <div>&copy; 2026 Thitipong Pumkokruk (Kim). All Rights Reserved.</div>
+
+        <div class="flex items-center gap-4">
+
+          <button onclick="openPresentationModal(0)" class="text-cyan-400 hover:underline">เปิดโหมดนำเสนอสัมภาษณ์</button>
+
+          <span>&bull;</span>
+
+          <a href="#home" class="hover:text-slate-300">กลับด้านบน</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================================================================= -->
+
+  <!-- INTERACTIVE INTERVIEW PRESENTATION MODAL / SLIDE DECK (โหมดนำเสนอสัมภาษณ์) -->
+
+  <!-- ========================================================================= -->
+
+  <div id="presentationModal" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-xl flex flex-col justify-between p-4 sm:p-6 md:p-8 select-none">
+
+    
+
+    <!-- Top Presentation Header Bar -->
+
+    <div class="max-w-6xl w-full mx-auto flex items-center justify-between border-b border-slate-800 pb-4">
+
+      <div class="flex items-center gap-3">
+
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-emerald-400 to-cyan-500 flex items-center justify-center text-slate-950 font-bold text-sm">
+
+          <i class="fa-solid fa-play"></i>
+
+        </div>
+
+        <div>
+
+          <h2 class="text-sm font-bold text-white">โหมดนำเสนอสัมภาษณ์งาน (Interview Pitch Deck)</h2>
+
+          <p class="text-xs text-cyan-400" id="slideIndicatorTitle">สไลด์ที่ 1 / 6: แนะนำตัวและภาพรวม</p>
+
+        </div>
+
+      </div>
+
+      <!-- Control actions -->
+
+      <div class="flex items-center gap-2">
+
+        <button onclick="toggleSpeakerNotes()" id="notesToggleBtn" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-medium text-slate-300 flex items-center gap-1.5 border border-slate-700 transition" title="เปิด/ปิด โพยสรุปประเด็นพูด">
+
+          <i class="fa-regular fa-lightbulb text-amber-400"></i>
+
+          <span class="hidden sm:inline">ประเด็นพูดนำเสนอ</span>
+
+        </button>
+
+        <button onclick="toggleFullscreen()" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition" title="เต็มหน้าจอ (F)">
+
+          <i class="fa-solid fa-expand text-xs"></i>
+
+        </button>
+
+        <button onclick="closePresentationModal()" class="px-3 py-1.5 rounded-lg bg-rose-950/80 hover:bg-rose-900 border border-rose-800 text-rose-300 hover:text-white text-xs font-semibold flex items-center gap-1 transition">
+
+          <i class="fa-solid fa-xmark"></i> ออกจากการนำเสนอ (Esc)
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- MAIN SLIDE DISPLAY AREA -->
+
+    <div class="max-w-6xl w-full mx-auto my-auto py-4 overflow-y-auto">
+
+      <!-- SLIDE 1: Executive Intro -->
+
+      <div class="slide-container active-slide" id="slide-0">
+
+        <div class="glass-card rounded-2xl p-6 md:p-10 border border-cyan-500/40 glow-cyan relative overflow-hidden">
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+            <div class="lg:col-span-8 space-y-4">
+
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-950 text-cyan-300 border border-cyan-700">Slide 1 &bull; Executive Pitch</span>
+
+              <h3 class="text-3xl sm:text-4xl font-extrabold text-white">นายฐิติพงศ์ พุ่มโคกกรวด (คิม)</h3>
+
+              <p class="text-lg text-cyan-300 font-semibold">Assistant Manager &bull; Senior Data Architect &bull; AI Innovation Specialist</p>
+
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+
+                "ด้วยประสบการณ์กว่า 13 ปีในสายงาน IT โดยเฉพาะ 9 ปีที่เจาะลึกด้าน Data Engineering, Database Performance Tuning และการสร้างระบบระดับประเทศ วันนี้ผมพร้อมผสาน Data + Cloud + Generative AI เพื่อขับเคลื่อนการเติบโตเชิงธุรกิจและลดต้นทุนให้แก่องค์กร"
+
+              </p>
+
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+
+                <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800 text-xs">
+
+                  <span class="text-slate-400 block">ประสบการณ์ IT</span>
+
+                  <strong class="text-white text-base">13+ ปี</strong>
+
+                </div>
+
+                <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800 text-xs">
+
+                  <span class="text-slate-400 block">เชี่ยวชาญด้าน Data</span>
+
+                  <strong class="text-cyan-400 text-base">9 ปีเต็ม</strong>
+
+                </div>
+
+                <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800 text-xs">
+
+                  <span class="text-slate-400 block">ตำแหน่งปัจจุบัน</span>
+
+                  <strong class="text-emerald-400 text-base">Acting Manager</strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col items-center justify-center p-6 bg-slate-900/80 rounded-xl border border-slate-800">
+
+              <div class="w-24 h-24 rounded-2xl bg-gradient-to-tr from-cyan-500 to-emerald-400 flex items-center justify-center text-4xl text-slate-950 font-bold mb-3 shadow-lg">
+
+                <i class="fa-solid fa-user-gear"></i>
+
+              </div>
+
+              <strong class="text-white text-base text-center">Data &amp; AI Leadership</strong>
+
+              <span class="text-xs text-cyan-400 text-center mt-1">SMAS Thailand &bull; กรมการกงสุล &bull; Honda Leasing</span>
+
+            </div>
+
+          </div>
+
+          <!-- Speaker Notes Box -->
+
+          <div class="speaker-notes mt-6 p-4 rounded-xl bg-amber-950/40 border border-amber-800/60 text-xs text-amber-200 hidden">
+
+            <strong class="text-amber-300 block mb-1"><i class="fa-regular fa-comment-dots mr-1"></i> ประเด็นพูดสไลด์ 1 (Talking Points):</strong>
+
+            1. แนะนำตัวสั้นๆ ชี้ให้เห็นว่าตนเองเติบโตจากสาย Technical ลึก (DBA / Programmer) สู่ระดับ Data Architecture และการเป็นผู้บริหารนวัตกรรม AI<br>
+
+            2. เน้นย้ำจุดแข็ง: เข้าใจตั้งแต่ระดับ Low-level Query/Database ไปจนถึงระดับ Cloud และ Business KPIs
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SLIDE 2: Major Impact & Achievements -->
+
+      <div class="slide-container" id="slide-1">
+
+        <div class="glass-card rounded-2xl p-6 md:p-10 border border-amber-500/40 glow-accent relative">
+
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-950 text-amber-300 border border-amber-700">Slide 2 &bull; Flagship Achievements</span>
+
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-6">3 ผลงานเด่นที่สร้างอิมแพกต์ระดับประเทศและองค์กร</h3>
+
+          
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+
+              <div class="text-cyan-400 text-2xl font-black">10h ➔ &lt;5m</div>
+
+              <h4 class="font-bold text-white text-sm">MS SQL Performance Tuning</h4>
+
+              <p class="text-xs text-slate-300">
+
+                แก้ปัญหาคิวรีช้าและการประมวลผลข้อมูลขนาดใหญ่ ลดระยะเวลาทำงานจาก 13 ชม. เหลือ 10 นาที (Honda) และลดเวลาดึงข้อมูลระบบได้กว่า 80% (SMAS)
+
+              </p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+
+              <div class="text-amber-400 text-2xl font-black">PSEA 2021</div>
+
+              <h4 class="font-bold text-white text-sm">ระบบลงทะเบียนเข้าประเทศ (COE)</h4>
+
+              <p class="text-xs text-slate-300">
+
+                นำทีมพัฒนาระบบ coethailand.mfa.go.th ในช่วงวิกฤต COVID-19 รองรับทราฟฟิกมหาศาลจากทั่วโลก จนได้รับรางวัลบริการภาครัฐยอดเยี่ยม
+
+              </p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+
+              <div class="text-emerald-400 text-2xl font-black">95% Precision</div>
+
+              <h4 class="font-bold text-white text-sm">Deep Learning Model</h4>
+
+              <p class="text-xs text-slate-300">
+
+                วิจัยและพัฒนาแบบจำลอง AI สำหรับทำนายความเสี่ยงและระยะของโรคไตในผู้ป่วยโรคเบาหวานได้อย่างแม่นยำสูง
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="speaker-notes mt-6 p-4 rounded-xl bg-amber-950/40 border border-amber-800/60 text-xs text-amber-200 hidden">
+
+            <strong class="text-amber-300 block mb-1"><i class="fa-regular fa-comment-dots mr-1"></i> ประเด็นพูดสไลด์ 2 (Talking Points):</strong>
+
+            1. ยกตัวอย่างเรื่อง SQL Tuning เพื่อแสดงความเชี่ยวชาญลึกซึ้งเรื่อง Database Internal Structure และ Execution Plan<br>
+
+            2. เล่าเรื่องระบบ COE เพื่อแสดงถึงความสามารถในการส่งมอบระบบที่มีความสำคัญระดับชาติภายใต้แรงกดดันและกำหนดเวลาที่จำกัด<br>
+
+            3. ชี้ให้เห็นว่าตนเองศึกษาและลงมือทำ Machine Learning จริง
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SLIDE 3: Data Engineering & Cloud Architecture -->
+
+      <div class="slide-container" id="slide-2">
+
+        <div class="glass-card rounded-2xl p-6 md:p-10 border border-cyan-500/40 relative">
+
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-950 text-cyan-300 border border-cyan-700">Slide 3 &bull; Data Architecture</span>
+
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-4">สถาปัตยกรรมข้อมูล: Medallion DWH &amp; Cloud Migration</h3>
+
+          <p class="text-xs sm:text-sm text-slate-300 mb-6">
+
+            สร้าง Single Source of Truth และวางโครงสร้างข้อมูลที่พร้อมต่อยอดสู่ AI Analytics
+
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+
+              <div class="w-8 h-8 rounded bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold mb-2">Bronze</div>
+
+              <strong class="text-white block mb-1">Raw Ingestion Layer</strong>
+
+              <p class="text-slate-400">ดึงและกักเก็บข้อมูลดิบจากระบบหลัก (SEED, Salesforce, SAP, On-Prem) ขึ้นสู่ Data Lake</p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+
+              <div class="w-8 h-8 rounded bg-slate-400/20 text-slate-300 flex items-center justify-center font-bold mb-2">Silver</div>
+
+              <strong class="text-white block mb-1">Cleaned &amp; Conformed Layer</strong>
+
+              <p class="text-slate-400">ประมวลผล Cleansing, Validation, Deduplication และเชื่อมโยง Entity ระหว่างระบบ</p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+
+              <div class="w-8 h-8 rounded bg-yellow-500/20 text-yellow-300 flex items-center justify-center font-bold mb-2">Gold</div>
+
+              <strong class="text-white block mb-1">Business Aggregate &amp; BI</strong>
+
+              <p class="text-slate-400">สร้าง Data Marts สำหรับ Power BI 20+ แดชบอร์ด เพื่อให้ผู้บริหารตัดสินใจได้แบบเรียลไทม์</p>
+
+            </div>
+
+          </div>
+
+          <div class="mt-4 p-3 rounded-lg bg-cyan-950/40 border border-cyan-800/40 flex items-center justify-between text-xs text-cyan-200">
+
+            <span><i class="fa-brands fa-aws mr-1.5 text-base text-amber-400"></i> ย้ายระบบ ETL จาก On-Premise ขึ้นสู่ AWS Cloud สำเร็จ 100%</span>
+
+            <span class="font-bold text-emerald-400">Scalable &amp; High Availability</span>
+
+          </div>
+
+          <div class="speaker-notes mt-6 p-4 rounded-xl bg-amber-950/40 border border-amber-800/60 text-xs text-amber-200 hidden">
+
+            <strong class="text-amber-300 block mb-1"><i class="fa-regular fa-comment-dots mr-1"></i> ประเด็นพูดสไลด์ 3 (Talking Points):</strong>
+
+            1. อธิบายว่าการทำ Data Warehouse ไม่ใช่แค่เก็บข้อมูล แต่ต้องออกแบบเป็นขั้นตอน (Medallion Architecture) เพื่อความสะอาดและตรวจสอบย้อนกลับได้<br>
+
+            2. เล่าความสำเร็จในการเปลี่ยนผ่านจากการใช้ Excel สู่ Power BI ที่เชื่อมตรงกับ DWH ช่วยให้ผู้บริหารทำงานเร็วขึ้น
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SLIDE 4: Enterprise AI & Innovation Leadership -->
+
+      <div class="slide-container" id="slide-3">
+
+        <div class="glass-card rounded-2xl p-6 md:p-10 border border-violet-500/40 relative">
+
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-violet-950 text-violet-300 border border-violet-700">Slide 4 &bull; AI Strategy</span>
+
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-4">ยุทธศาสตร์และโครงการนวัตกรรม AI (Innovation &amp; AI)</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+
+              <div class="text-violet-400 font-bold text-sm flex items-center gap-2">
+
+                <i class="fa-solid fa-network-wired"></i> 5-Year AI &amp; RAG Vision
+
+              </div>
+
+              <p class="text-slate-300">
+
+                วางแผนโครงสร้างพื้นฐาน RAG สำหรับ Knowledge Management ในองค์กร ผสาน AI เข้ากับฐานข้อมูลภายในอย่างปลอดภัย
+
+              </p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+
+              <div class="text-cyan-400 font-bold text-sm flex items-center gap-2">
+
+                <i class="fa-solid fa-shield-halved"></i> AI Agents Governance
+
+              </div>
+
+              <p class="text-slate-300">
+
+                สร้างกรอบกำกับดูแลความปลอดภัยของ AI Agent และควบคุมต้นทุนการใช้งานแบบ Pay-as-you-go คุ้มค่าต่อการลงทุน
+
+              </p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+
+              <div class="text-emerald-400 font-bold text-sm flex items-center gap-2">
+
+                <i class="fa-solid fa-mobile-screen"></i> AI Repair Approval App
+
+              </div>
+
+              <p class="text-slate-300">
+
+                พัฒนา Mobile App ร่วมกับ AI OCR เพื่อเร่งกระบวนการอนุมัติงานซ่อมของทีมบริการให้สะดวกรวดเร็วยิ่งขึ้น
+
+              </p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+
+              <div class="text-amber-400 font-bold text-sm flex items-center gap-2">
+
+                <i class="fa-solid fa-microphone-lines"></i> AI Meeting Summarizer
+
+              </div>
+
+              <p class="text-slate-300">
+
+                โค้ชและดูแลทีมงานในการสร้างเครื่องมือสรุปสาระสำคัญจากการประชุม ลดเวลาการทำเอกสารของพนักงาน
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="speaker-notes mt-6 p-4 rounded-xl bg-amber-950/40 border border-amber-800/60 text-xs text-amber-200 hidden">
+
+            <strong class="text-amber-300 block mb-1"><i class="fa-regular fa-comment-dots mr-1"></i> ประเด็นพูดสไลด์ 4 (Talking Points):</strong>
+
+            1. เน้นย้ำว่า AI ในมุมมองของผมต้องจับต้องได้ (Pragmatic AI) เน้นแก้ปัญหาจริงใน Business Workflow<br>
+
+            2. แสดงความเข้าใจเรื่อง Security, Data Privacy และ AI Governance ซึ่งเป็นเรื่องสำคัญที่สุดสำหรับระดับ Enterprise
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SLIDE 5: Leadership, Soft Skills & Management -->
+
+      <div class="slide-container" id="slide-4">
+
+        <div class="glass-card rounded-2xl p-6 md:p-10 border border-emerald-500/40 relative">
+
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-950 text-emerald-300 border border-emerald-700">Slide 5 &bull; Management &amp; People</span>
+
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-6">ทักษะการบริหารจัดการและการทำงานร่วมกับทีม</h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+
+              <div class="text-emerald-400 text-xl mb-2"><i class="fa-solid fa-users"></i></div>
+
+              <strong class="text-white block mb-1">Team Coaching</strong>
+
+              <p class="text-slate-400">พัฒนาทักษะสมาชิกในทีม (Mentorship) ทั้งด้าน Hard skills และแนวคิดการทำงาน</p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+
+              <div class="text-cyan-400 text-xl mb-2"><i class="fa-solid fa-handshake"></i></div>
+
+              <strong class="text-white block mb-1">Vendor Management</strong>
+
+              <p class="text-slate-400">ควบคุมคุณภาพ, การเจรจาต่อรอง, ขอบเขตงาน (Scope) และงบประมาณกับผู้รับเหมาภายนอก</p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+
+              <div class="text-violet-400 text-xl mb-2"><i class="fa-solid fa-comments"></i></div>
+
+              <strong class="text-white block mb-1">Cross-Functional</strong>
+
+              <p class="text-slate-400">สื่อสารภาษาเทคนิคให้เป็นภาษาธุรกิจ สร้างความร่วมมือระหว่างทีม IT และ Business Units</p>
+
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+
+              <div class="text-amber-400 text-xl mb-2"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+              <strong class="text-white block mb-1">Root Cause Analysis</strong>
+
+              <p class="text-slate-400">แก้ปัญหาด้วยกระบวนการ 5W1H, Why Analysis, Fishbone Diagram อย่างเป็นระบบ</p>
+
+            </div>
+
+          </div>
+
+          <div class="speaker-notes mt-6 p-4 rounded-xl bg-amber-950/40 border border-amber-800/60 text-xs text-amber-200 hidden">
+
+            <strong class="text-amber-300 block mb-1"><i class="fa-regular fa-comment-dots mr-1"></i> ประเด็นพูดสไลด์ 5 (Talking Points):</strong>
+
+            1. ชูจุดเด่นการเป็นผู้นำที่เข้าถึงง่าย ทำงานแบบ Systematic และวิเคราะห์คนก่อนประชุมเพื่อการสื่อสารที่ราบรื่น<br>
+
+            2. เน้นย้ำความสามารถในการบริหารจัดการโครงการแบบ Agile และควบคุมความเสี่ยง
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SLIDE 6: Why Hire Me & Vision -->
+
+      <div class="slide-container" id="slide-5">
+
+        <div class="glass-card rounded-2xl p-6 md:p-10 border border-cyan-500/50 glow-cyan relative text-center">
+
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-950 text-cyan-300 border border-cyan-700">Slide 6 &bull; Summary &amp; Value Proposition</span>
+
+          <h3 class="text-2xl sm:text-4xl font-extrabold text-white mt-3 mb-4">ทำไมผมจึงพร้อมสร้างคุณค่าให้กับองค์กรของท่าน</h3>
+
+          
+
+          <div class="max-w-3xl mx-auto space-y-4 text-left text-xs sm:text-sm text-slate-300 my-6">
+
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start gap-3">
+
+              <i class="fa-solid fa-circle-check text-cyan-400 text-lg mt-0.5"></i>
+
+              <div>
+
+                <strong class="text-white block">1. ประสบการณ์ลึกซึ้งและผ่านงานจริง (Proven Track Record):</strong>
+
+                มีผลงานจริงทั้งการจูนระบบฐานข้อมูลระดับ Enterprise, การสร้าง DWH จากศูนย์ และการสร้างระบบภาครัฐระดับประเทศ
+
+              </div>
+
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start gap-3">
+
+              <i class="fa-solid fa-circle-check text-emerald-400 text-lg mt-0.5"></i>
+
+              <div>
+
+                <strong class="text-white block">2. ผสาน Data Engineering เข้ากับ AI ยุคใหม่:</strong>
+
+                พร้อมสร้าง Infrastructure ที่เชื่อม Data Warehouse เข้ากับ RAG และ LLM APIs เพื่อสร้างความได้เปรียบทางธุรกิจ
+
+              </div>
+
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-start gap-3">
+
+              <i class="fa-solid fa-circle-check text-violet-400 text-lg mt-0.5"></i>
+
+              <div>
+
+                <strong class="text-white block">3. ทัศนคติมุ่งมั่นและพร้อมเรียนรู้สิ่งใหม่ตลอดเวลา (Lifelong Learner):</strong>
+
+                เรียนรู้เครื่องมือใหม่รวดเร็ว ทำงานเป็นระบบ มีโครงสร้าง และทุ่มเทเพื่อเป้าหมายของทีมอย่างเต็มที่
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="pt-4 flex flex-wrap justify-center items-center gap-4">
+
+            <a href="mailto:thitipong.pumkokruk@gmail.com" class="px-6 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-sm shadow-lg shadow-cyan-500/25 transition">
+
+              <i class="fa-solid fa-envelope mr-1.5"></i> thitipong.pumkokruk@gmail.com
+
+            </a>
+
+            <a href="tel:0842951559" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm border border-slate-700 transition">
+
+              <i class="fa-solid fa-phone mr-1.5 text-emerald-400"></i> 084-295-1559
+
+            </a>
+
+          </div>
+
+          <div class="speaker-notes mt-6 p-4 rounded-xl bg-amber-950/40 border border-amber-800/60 text-xs text-amber-200 text-left hidden">
+
+            <strong class="text-amber-300 block mb-1"><i class="fa-regular fa-comment-dots mr-1"></i> ประเด็นพูดสไลด์ 6 (Closing Pitch):</strong>
+
+            สรุปปิดท้ายด้วยความมั่นใจ: "ผมพร้อมนำความรู้ทั้ง Data และ AI มาสร้างผลลัพธ์ที่เป็นรูปธรรมและขับเคลื่อนองค์กรให้เติบโตอย่างยั่งยืนครับ ขอบคุณครับ"
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom Slide Controls & Progress Bar -->
+
+    <div class="max-w-6xl w-full mx-auto border-t border-slate-800 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+      <!-- Slide Thumbnails / Indicator Pills -->
+
+      <div class="flex items-center gap-1.5" id="slidePills">
+
+        <button onclick="goToSlide(0)" class="w-8 h-2 rounded-full bg-cyan-400 transition" title="Slide 1"></button>
+
+        <button onclick="goToSlide(1)" class="w-8 h-2 rounded-full bg-slate-700 hover:bg-slate-600 transition" title="Slide 2"></button>
+
+        <button onclick="goToSlide(2)" class="w-8 h-2 rounded-full bg-slate-700 hover:bg-slate-600 transition" title="Slide 3"></button>
+
+        <button onclick="goToSlide(3)" class="w-8 h-2 rounded-full bg-slate-700 hover:bg-slate-600 transition" title="Slide 4"></button>
+
+        <button onclick="goToSlide(4)" class="w-8 h-2 rounded-full bg-slate-700 hover:bg-slate-600 transition" title="Slide 5"></button>
+
+        <button onclick="goToSlide(5)" class="w-8 h-2 rounded-full bg-slate-700 hover:bg-slate-600 transition" title="Slide 6"></button>
+
+      </div>
+
+      <!-- Navigation Arrows -->
+
+      <div class="flex items-center gap-2">
+
+        <span class="text-xs text-slate-400 mr-2 hidden sm:inline">กดปุ่มลูกศร &larr; / &rarr; บนคีย์บอร์ดได้</span>
+
+        <button onclick="prevSlide()" id="prevSlideBtn" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 disabled:opacity-40 text-slate-200 text-xs font-semibold flex items-center gap-1 transition">
+
+          <i class="fa-solid fa-chevron-left"></i> ก่อนหน้า
+
+        </button>
+
+        <button onclick="nextSlide()" id="nextSlideBtn" class="px-5 py-2 rounded-lg bg-cyan-600 hover:bg-cyan-500 disabled:opacity-40 text-white text-xs font-semibold flex items-center gap-1 shadow-md shadow-cyan-600/30 transition">
+
+          ถัดไป <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- JAVASCRIPT LOGIC FOR WEBSITE & PRESENTATION DECK -->
+
+  <script>
+
+    // Presentation State
+
+    let currentSlide = 0;
+
+    const totalSlides = 6;
+
+    const slideTitles = [
+
+      "สไลด์ที่ 1 / 6: แนะนำตัวและภาพรวม (Executive Profile)",
+
+      "สไลด์ที่ 2 / 6: ผลงานสร้างอิมแพกต์เด่น (Key Achievements)",
+
+      "สไลด์ที่ 3 / 6: สถาปัตยกรรมข้อมูล (Data & Cloud Architecture)",
+
+      "สไลด์ที่ 4 / 6: ยุทธศาสตร์นวัตกรรม AI (Enterprise AI Strategy)",
+
+      "สไลด์ที่ 5 / 6: การบริหารจัดการและทีม (Management & Soft Skills)",
+
+      "สไลด์ที่ 6 / 6: บทสรุปและคุณค่าที่ส่งมอบ (Why Hire Me & Closing)"
+
+    ];
+
+    function openPresentationModal(slideIndex = 0) {
+
+      document.getElementById('presentationModal').classList.remove('hidden');
+
+      document.body.style.overflow = 'hidden';
+
+      goToSlide(slideIndex);
+
+    }
+
+    function closePresentationModal() {
+
+      document.getElementById('presentationModal').classList.add('hidden');
+
+      document.body.style.overflow = 'auto';
+
+    }
+
+    function goToSlide(index) {
+
+      if (index < 0 || index >= totalSlides) return;
+
+      currentSlide = index;
+
+      // Update slide display
+
+      for (let i = 0; i < totalSlides; i++) {
+
+        const slide = document.getElementById('slide-' + i);
+
+        if (slide) {
+
+          if (i === currentSlide) {
+
+            slide.classList.add('active-slide');
+
+          } else {
+
+            slide.classList.remove('active-slide');
+
+          }
+
+        }
+
+      }
+
+      // Update Indicator Title
+
+      const titleEl = document.getElementById('slideIndicatorTitle');
+
+      if (titleEl) titleEl.innerText = slideTitles[currentSlide];
+
+      // Update Pills
+
+      const pillContainer = document.getElementById('slidePills');
+
+      if (pillContainer) {
+
+        const pills = pillContainer.querySelectorAll('button');
+
+        pills.forEach((p, idx) => {
+
+          if (idx === currentSlide) {
+
+            p.className = 'w-8 h-2 rounded-full bg-cyan-400 transition';
+
+          } else {
+
+            p.className = 'w-8 h-2 rounded-full bg-slate-700 hover:bg-slate-600 transition';
+
+          }
+
+        });
+
+      }
+
+      // Update Next / Prev button states
+
+      const prevBtn = document.getElementById('prevSlideBtn');
+
+      const nextBtn = document.getElementById('nextSlideBtn');
+
+      if (prevBtn) prevBtn.disabled = (currentSlide === 0);
+
+      if (nextBtn) {
+
+        if (currentSlide === totalSlides - 1) {
+
+          nextBtn.innerHTML = 'เสร็จสิ้นการนำเสนอ <i class="fa-solid fa-check ml-1"></i>';
+
+        } else {
+
+          nextBtn.innerHTML = 'ถัดไป <i class="fa-solid fa-chevron-right ml-1"></i>';
+
+        }
+
+      }
+
+    }
+
+    function prevSlide() {
+
+      if (currentSlide > 0) goToSlide(currentSlide - 1);
+
+    }
+
+    function nextSlide() {
+
+      if (currentSlide < totalSlides - 1) {
+
+        goToSlide(currentSlide + 1);
+
+      } else {
+
+        closePresentationModal();
+
+      }
+
+    }
+
+    function toggleSpeakerNotes() {
+
+      const notes = document.querySelectorAll('.speaker-notes');
+
+      notes.forEach(note => {
+
+        note.classList.toggle('hidden');
+
+      });
+
+      const btn = document.getElementById('notesToggleBtn');
+
+      if (btn) {
+
+        btn.classList.toggle('bg-amber-950/80');
+
+        btn.classList.toggle('border-amber-700');
+
+      }
+
+    }
+
+    function toggleFullscreen() {
+
+      if (!document.fullscreenElement) {
+
+        document.documentElement.requestFullscreen().catch(err => console.log(err));
+
+      } else {
+
+        if (document.exitFullscreen) document.exitFullscreen();
+
+      }
+
+    }
+
+    // Keyboard navigation
+
+    window.addEventListener('keydown', (e) => {
+
+      const modal = document.getElementById('presentationModal');
+
+      if (modal && !modal.classList.contains('hidden')) {
+
+        if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+
+          e.preventDefault();
+
+          nextSlide();
+
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+
+          e.preventDefault();
+
+          prevSlide();
+
+        } else if (e.key === 'Escape') {
+
+          closePresentationModal();
+
+        } else if (e.key === 'f' || e.key === 'F') {
+
+          toggleFullscreen();
+
+        } else if (e.key === 'n' || e.key === 'N') {
+
+          toggleSpeakerNotes();
+
+        }
+
+      }
+
+    });
+
+    // Mobile menu toggle
+
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (mobileBtn && mobileMenu) {
+
+      mobileBtn.addEventListener('click', () => {
+
+        mobileMenu.classList.toggle('hidden');
+
+      });
+
+    }
+
+  </script>
+
+</body>
+
+</html>
+
+
